@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>池袋｜旅遊地點詳細資料</title>
+  <style>
+    :root{--bg:#f6f3ee;--paper:#fffdfa;--ink:#1f2933;--muted:#667085;--line:#d9d2c7;--accent:#77543b;--soft:#efe4d6;--warn:#fff4d6;--ok:#e8f2e2}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.65}
+    a{color:#6b3f22}
+    header{background:#2d231d;color:#fff;padding:28px 18px}
+    header .inner,nav .inner,main,footer{max-width:1120px;margin:0 auto}
+    h1{font-size:30px;line-height:1.25;margin:0 0 8px}
+    h2{font-size:24px;margin:34px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+    h3{font-size:18px;margin:20px 0 8px}
+    nav{position:sticky;top:0;background:#fffdfa;border-bottom:1px solid var(--line);z-index:2}
+    nav .inner{display:flex;gap:8px;overflow:auto;padding:10px 12px}
+    nav a{white-space:nowrap;text-decoration:none;background:var(--soft);border:1px solid #dac3a9;border-radius:999px;padding:6px 10px;font-size:14px}
+    main{padding:22px 16px 42px}
+    footer{padding:18px 16px 40px;color:var(--muted);font-size:13px}
+    .meta{color:#d8c8b8}
+    .note{background:var(--warn);border:1px solid #e1bd68;border-radius:8px;padding:12px 14px;margin:14px 0}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:16px;margin:14px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .pill{display:inline-block;background:var(--soft);border:1px solid #dac3a9;border-radius:999px;padding:4px 9px;margin:3px;font-size:13px}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px;background:var(--paper);margin:12px 0 20px}
+    table{width:100%;border-collapse:collapse;min-width:980px}
+    th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;font-size:14px}
+    th{background:#5d4030;color:#fff;position:sticky;top:0}
+    tr:nth-child(even) td{background:#fbf7f1}
+    .map-frame{border:1px solid var(--line);background:#fffdfa;border-radius:8px;overflow:hidden;margin:12px 0}
+    .map-placeholder{min-height:300px;display:grid;place-items:center;padding:24px;text-align:center;background:linear-gradient(135deg,#fffdfa,#efe4d6)}
+    .source{font-size:13px;color:var(--muted)}
+    @media(max-width:760px){h1{font-size:25px}.grid{grid-template-columns:1fr}main{padding:18px 12px}table{min-width:820px}}
+    @media print{nav{display:none}body{background:#fff}.card,.table-wrap,.map-frame{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header id="top">
+    <div class="inner">
+      <h1>池袋</h1>
+      <p class="meta">旅遊地點詳細資料｜整理日：2026-07-03｜適用：2026 年 11 月東京旅遊候選</p>
+      <p>半日到偏長半日候選，主軸為 animate 池袋本店、Otome Road 二手周邊、推し活用品，以及西武／東武百貨甜點與食品樓層。</p>
+    </div>
+  </header>
+  <nav aria-label="頁面導覽"><div class="inner">
+    <a href="#basic">基本資訊</a><a href="#mymaps">My Maps</a><a href="#spots">景點</a><a href="#shopping">購物</a><a href="#food">餐廳甜點</a><a href="#transport">交通</a><a href="#notes">注意事項</a><a href="#sources">來源</a>
+  </div></nav>
+  <main>
+    <section id="basic" class="card">
+      <h2>基本資訊</h2>
+      <div class="grid">
+        <div><strong>所在地區</strong><br>東京北部／池袋：池袋站東口、東池袋、Otome Road、西武與東武百貨。</div>
+        <div><strong>停留時間</strong><br>約 4～6 小時；遇到活動、整理券或二手店挖寶時容易拉長。</div>
+        <div><strong>適合搭配</strong><br>小石川後樂園、神保町、上野、川越；不建議同日塞滿 Sunshine City。</div>
+      </div>
+      <p><span class="pill">優先</span><span class="pill">步行：中</span><span class="pill">動漫周邊</span><span class="pill">二手周邊</span><span class="pill">推し活用品</span><span class="pill">百貨甜點</span><span class="pill">雨天可行</span></p>
+      <div class="note">2026 年 11 月的實際活動、商品庫存、整理券、營業時間、百貨休館與餐飲菜單仍需出發前再次確認。</div>
+    </section>
+
+    <section id="mymaps" class="card">
+      <h2>Google My Maps 地圖</h2>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/d/embed?mid=101aUrW8_Ra1hmaRwkUi992J8Ikk6aTA" width="100%" height="520" style="border:0" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section id="spots" class="card">
+      <h2>景點列表</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>中文名稱</th><th>日文名稱</th><th>地址或大致位置</th><th>Google Maps</th></tr></thead>
+        <tbody>
+          <tr><td>池袋站東口</td><td>池袋駅東口</td><td>JR／東京 Metro／西武池袋線池袋站東口周邊</td><td><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3">地圖</a></td></tr>
+          <tr><td>Otome Road</td><td>乙女ロード</td><td>東京都豐島區東池袋 3 丁目、Sunshine 60 通周邊</td><td><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Otome%20Road%20Ikebukuro">地圖</a></td></tr>
+          <tr><td>中池袋公園</td><td>中池袋公園</td><td>東京都豐島區東池袋 1-16-1 周邊，animate 旁</td><td><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E6%B1%A0%E8%A2%8B%E5%85%AC%E5%9C%92">地圖</a></td></tr>
+          <tr><td>HAREZA 池袋</td><td>HAREZA池袋</td><td>東京都豐島區東池袋 1-19-1 周邊</td><td><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=HAREZA%E6%B1%A0%E8%A2%8B">地圖</a></td></tr>
+          <tr><td>Sunshine City</td><td>サンシャインシティ</td><td>東京都豐島區東池袋 3-1</td><td><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E3%82%B7%E3%83%86%E3%82%A3%20%E6%B1%A0%E8%A2%8B">地圖</a></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="shopping" class="card">
+      <h2>購物列表</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>中文店名</th><th>日文店名</th><th>地址</th><th>推薦購買內容</th><th>是否需要預約</th><th>資料來源</th><th>Google Maps</th></tr></thead>
+        <tbody>
+          <tr><td>animate 池袋本店</td><td>アニメイト池袋本店</td><td>東京都豐島區東池袋 1-20-7</td><td>鬼滅之刃、芙莉蓮、動漫新商品、書籍、角色雜貨、Gratte／only shop 活動</td><td>通常不需要；活動、整理券與庫存需再次確認</td><td><a href="https://www.animate.co.jp/shop/ikebukuro/" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E3%82%A2%E3%83%8B%E3%83%A1%E3%82%A4%E3%83%88%E6%B1%A0%E8%A2%8B%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>K-BOOKS 池袋乙女館</td><td>K-BOOKS 池袋乙女館</td><td>東京都豐島區東池袋 3-15-5 東池袋マンション B1F</td><td>乙女遊戲、BL、女性向作品二手周邊</td><td>不需要；改裝休業與 11 月營業需再次確認</td><td><a href="https://www.k-books.co.jp/shop/otome" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=K-BOOKS%20%E6%B1%A0%E8%A2%8B%E4%B9%99%E5%A5%B3%E9%A4%A8" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>K-BOOKS 池袋角色館</td><td>K-BOOKS 池袋キャラ館</td><td>東京都豐島區東池袋 3-15-14 クレール東池袋 1F</td><td>角色周邊、壓克力立牌、徽章、吊飾、模型</td><td>不需要；庫存與收購品類需再次確認</td><td><a href="https://www.k-books.co.jp/shop/anime" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=K-BOOKS%20%E6%B1%A0%E8%A2%8B%E3%82%AD%E3%83%A3%E3%83%A9%E9%A4%A8" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>K-BOOKS 池袋推し活館</td><td>K-BOOKS 池袋推し活館</td><td>東京都豐島區東池袋 1-15-10 第5アムスビル 2F</td><td>痛包、娃衣、裝飾配件、推し活用品、手作材料</td><td>不需要；商品庫存需再次確認</td><td><a href="https://www.k-books.co.jp/shop/sozai" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=K-BOOKS%20%E6%B1%A0%E8%A2%8B%E6%8E%A8%E3%81%97%E6%B4%BB%E9%A4%A8" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>西武池袋本店</td><td>西武池袋本店</td><td>東京都豐島區南池袋 1-28-1</td><td>B1 甜點與禮盒、食品伴手禮、茶泡飯與食品櫃位補買</td><td>不需要；改裝、休館、櫃位異動需再次確認</td><td><a href="https://www.sogo-seibu.jp/ikebukuro/" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E6%AD%A6%E6%B1%A0%E8%A2%8B%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>東武百貨店池袋店</td><td>東武百貨店 池袋店</td><td>東京都豐島區西池袋 1-1-25</td><td>食品樓層、全國銘菓、蛋糕、布丁、季節甜點</td><td>不需要；期間限定店與營業時間需再次確認</td><td><a href="https://www.tobu-dept.jp/ikebukuro/" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%AD%A6%E7%99%BE%E8%B2%A8%E5%BA%97%20%E6%B1%A0%E8%A2%8B%E5%BA%97" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="food" class="card">
+      <h2>餐廳與甜點列表</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>中文店名</th><th>日文店名</th><th>地址</th><th>價位</th><th>推薦餐點</th><th>預約</th><th>排隊</th><th>資料來源</th><th>Google Maps</th></tr></thead>
+        <tbody>
+          <tr><td>西武池袋本店地下甜點</td><td>西武池袋本店 デパチカ（スイーツ＆ギフト）</td><td>東京都豐島區南池袋 1-28-1 B1 周邊</td><td>平價～中等</td><td>蛋糕、布丁、和菓子、季節栗子／地瓜甜點、食品伴手禮</td><td>不需要；需再次確認</td><td>短停留佳</td><td><a href="https://www.sogo-seibu.jp/ikebukuro/" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E6%AD%A6%E6%B1%A0%E8%A2%8B%E6%9C%AC%E5%BA%97%20%E3%83%87%E3%83%91%E3%83%81%E3%82%AB" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>東武百貨店池袋店食品樓層</td><td>東武百貨店 池袋店 食品フロア</td><td>東京都豐島區西池袋 1-1-25</td><td>平價～中等</td><td>全國銘菓、蛋糕、布丁、季節甜點、地下熟食</td><td>不需要；需再次確認</td><td>短停留佳</td><td><a href="https://www.tobu-dept.jp/ikebukuro/" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E6%AD%A6%E7%99%BE%E8%B2%A8%E5%BA%97%20%E6%B1%A0%E8%A2%8B%E5%BA%97%20%E9%A3%9F%E5%93%81" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>麵創房 無敵家</td><td>麺創房 無敵家</td><td>東京都豐島區南池袋 1-17-1 周邊</td><td>中等</td><td>豚骨醬油拉麵</td><td>不需要；需再次確認</td><td>熱門長隊，排太久改百貨餐廳</td><td><a href="https://www.mutekiya.com/" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E5%89%B5%E6%88%BF%E7%84%A1%E6%95%B5%E5%AE%B6" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>洋食 UCHOUTEN</td><td>洋食UCHOUTEN</td><td>東京都豐島區南池袋 2-36-10 周邊</td><td>中等</td><td>黑毛和牛漢堡排、洋食</td><td>需再次確認</td><td>可排但不宜過久</td><td><a href="https://tabelog.com/tokyo/A1305/A130501/13003955/" target="_blank" rel="noopener noreferrer">Tabelog</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E6%B4%8B%E9%A3%9FUCHOUTEN%20%E6%B1%A0%E8%A2%8B" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>PHO THIN TOKYO 池袋</td><td>PHO THIN TOKYO 池袋店</td><td>東京都豐島區東池袋 1-12-14 周邊</td><td>平價～中等</td><td>牛肉河粉</td><td>不需要；需再次確認</td><td>短排可，長隊略過</td><td><a href="https://tabelog.com/tokyo/A1305/A130501/13229289/" target="_blank" rel="noopener noreferrer">Tabelog</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=PHO%20THIN%20TOKYO%20%E6%B1%A0%E8%A2%8B" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+          <tr><td>Takase 池袋本店</td><td>タカセ 池袋本店</td><td>東京都豐島區東池袋 1-1-4 周邊</td><td>平價～中等</td><td>昭和風蛋糕、布丁、麵包、外帶甜點</td><td>不需要；需再次確認</td><td>外帶佳</td><td><a href="https://www.takase-yogashi.com/" target="_blank" rel="noopener noreferrer">官方</a></td><td><a href="https://www.google.com/maps/search/?api=1&query=%E3%82%BF%E3%82%AB%E3%82%BB%20%E6%B1%A0%E8%A2%8B%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener noreferrer">地圖</a></td></tr>
+        </tbody>
+      </table></div>
+      <div class="note">正餐建議只選 1 家，甜點以百貨地下食品街或外帶為主；若無敵家或 UCHOUTEN 排隊過長，直接改百貨餐廳或地下熟食。</div>
+    </section>
+
+    <section id="transport" class="card">
+      <h2>交通方式</h2>
+      <h3>如何到達</h3>
+      <ul>
+        <li>新宿：JR 山手線、埼京線或湘南新宿線至池袋，約 5～10 分。</li>
+        <li>澀谷：JR 或副都心線至池袋，約 12～20 分。</li>
+        <li>東京站：丸之內線直達池袋，約 17～20 分；或 JR 山手線約 25 分。</li>
+        <li>上野：JR 山手線至池袋，約 16～20 分。</li>
+        <li>銀座：丸之內線直達池袋，約 20 分。</li>
+      </ul>
+      <h3>如何離開</h3>
+      <p>往新宿、澀谷用 JR 或副都心線；往東京、銀座用丸之內線；往川越可由東武東上線接續，但不建議深逛池袋後再排川越整段。</p>
+      <h3>交通注意</h3>
+      <p>池袋站巨大且東西口容易走錯。animate 與 Otome Road 以東口為基準；東武百貨在西口側，西武池袋在東口側，安排甜點時要留意動線。</p>
+    </section>
+
+    <section id="notes" class="card">
+      <h2>注意事項</h2>
+      <ul>
+        <li>K-BOOKS 各館、animate 活動樓層／Gratte、百貨地下食品街、期間限定甜點櫃與餐廳營業容易變動，出發前 1～2 週需再次確認。</li>
+        <li>鬼滅之刃、芙莉蓮商品與活動不能假設 2026 年 11 月一定有貨；正式排程前查 animate 活動、only shop、fair 與整理券規則。</li>
+        <li>二手周邊搜尋時間不可控，若沒有明確目標作品，建議先逛 animate，再挑 2～3 間 K-BOOKS 重點店。</li>
+        <li>雨天可集中 animate、K-BOOKS、百貨地下街與車站連通商場；戶外只保留必要步行。</li>
+        <li>池袋不是紅葉主軸，11 月全月皆可；賞楓另排小石川後樂園、新宿御苑、明治神宮外苑或高尾山較合理。</li>
+      </ul>
+    </section>
+
+    <section id="sources" class="card">
+      <h2>主要來源</h2>
+      <ul class="source">
+        <li><a href="https://www.animate.co.jp/shop/ikebukuro/" target="_blank" rel="noopener noreferrer">animate 池袋本店官方</a></li>
+        <li><a href="https://www.k-books.co.jp/shop/" target="_blank" rel="noopener noreferrer">K-BOOKS 店舗一覧與池袋各館官方</a></li>
+        <li><a href="https://www.sogo-seibu.jp/ikebukuro/" target="_blank" rel="noopener noreferrer">西武池袋本店官方</a></li>
+        <li><a href="https://www.tobu-dept.jp/ikebukuro/" target="_blank" rel="noopener noreferrer">東武百貨店池袋店官方</a></li>
+        <li><a href="https://sunshinecity.jp/" target="_blank" rel="noopener noreferrer">Sunshine City 官方</a></li>
+        <li><a href="https://www.mutekiya.com/" target="_blank" rel="noopener noreferrer">麵創房無敵家官方</a>、<a href="https://tabelog.com/" target="_blank" rel="noopener noreferrer">Tabelog</a> 與各店官方網站、Google Maps 輔助查詢。</li>
+      </ul>
+    </section>
+  </main>
+  <footer>本頁為單檔 HTML，含內嵌 CSS。資料為候選詳細資料，不是固定逐日行程。已嵌入東京總地圖 My Maps，並保留 CSV 匯入說明。</footer>
+</body>
+</html>
+
+
+
+
+
