@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2026 旅遊資料索引</title>
+  <title>2026 11月 東京旅遊資料索引</title>
   <style>
     :root {
       color-scheme: light;
-      --bg: #f6f7f9;
-      --panel: #ffffff;
-      --text: #1f2937;
-      --muted: #64748b;
-      --line: #d9e0e8;
-      --link: #0f766e;
-      --link-hover: #0b5f59;
+      --bg: #f6f3ee;
+      --panel: #fffdfa;
+      --text: #1f2933;
+      --muted: #667085;
+      --line: #d9d2c7;
+      --link: #77543b;
+      --link-hover: #6b3f22;
+      --accent: #b7794a;
     }
 
     * {
@@ -55,12 +56,18 @@
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(70, 48, 30, .05);
     }
 
     h2 {
-      margin: 0 0 16px;
-      font-size: 1.15rem;
+      display: inline-flex;
+      align-items: center;
+      margin: 0 0 18px;
+      padding: 4px 0 8px;
+      border-bottom: 2px solid var(--accent);
+      font-size: 1.35rem;
       line-height: 1.35;
+      color: var(--link);
     }
 
     ul {
@@ -80,6 +87,7 @@
       display: inline-flex;
       align-items: center;
       min-height: 36px;
+      padding: 2px 0;
       color: var(--link);
       font-weight: 600;
       text-decoration: none;
@@ -90,6 +98,8 @@
     a:focus-visible {
       color: var(--link-hover);
       text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
     }
 
     @media (max-width: 560px) {
@@ -107,19 +117,19 @@
 <body>
   <main>
     <header>
-      <h1>2026 旅遊資料索引</h1>
+      <h1>2026 11月 東京旅遊資料索引</h1>
       <p>旅遊地點列表與各區詳細資料。</p>
     </header>
 
     <section aria-labelledby="main-list-title">
-      <h2 id="main-list-title">總覽</h2>
+      <h2 id="main-list-title">規劃資料</h2>
       <ul>
         <li><a href="旅遊地點列表.html">旅遊地點列表</a></li>
       </ul>
     </section>
 
     <section aria-labelledby="detail-pages-title">
-      <h2 id="detail-pages-title">詳細資料</h2>
+      <h2 id="detail-pages-title">地點資料</h2>
       <ul>
         <li><a href="旅遊地點詳細資料-北鐮倉.html">北鐮倉</a></li>
         <li><a href="旅遊地點詳細資料-池袋.html">池袋</a></li>
